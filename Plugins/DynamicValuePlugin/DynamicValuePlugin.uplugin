@@ -1,0 +1,20 @@
+{
+	"FileVersion" : 3,
+	
+	"FriendlyName" : "Dynamic Value Plugin",
+	"Version" : 1,
+	"VersionName" : "1.0",
+	"CreatedBy" : "Lin Luo",
+	"CreatedByURL" : "",
+	"EngineVersion" : "4.10.4",
+	"Description" : "DynamicValue and map support for BP",
+	"Category" : "Utilities",
+	
+	"Modules" :
+	[
+		{
+			"Name" : "DynamicValuePlugin",
+			"Type" : "Developer"
+		}
+	]
+}
