@@ -14,4 +14,10 @@ Make sure that there is a top level BP varialbe to hold the reference to the cre
 
 All the BP usage examples are residing inside the project's BP_GameMode Blueprint.
 
-Copy Plugins/DynamicValuePlugin to your project root directory to use the DynamicValues. Also, make sure the DynamicValuePlugin is enabled.
+Copy Plugins/DynamicValuePlugin to your project root directory to use the DynamicValues; make sure the Xcode/VisualStudio project is regenerated. Also, make sure the DynamicValuePlugin is enabled inside the editor.
+
+All the functions are under the categories: DynamicValue, DynamicStruct, and StringToDynamicValueMap.
+
+TODO:
+1. DynamicStruct should be able to use StringToDynamicValueMap as its backend, they are similar but different due to historical reasons
+2. Iterator support: currently, to iterate through ActorSet/StringToDynamicValueMap, an array is obtained (with copying) to be used as iteration, due to BP's inability to support const reference arrays. Iterator might be more efficient.
