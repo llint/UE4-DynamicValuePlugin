@@ -12,6 +12,7 @@ UStringToDynamicValueMap::UStringToDynamicValueMap()
 void UStringToDynamicValueMap::RemoveKeyIndex(FString Key, int32 Index)
 {
     StringKeys.Swap(Index, StringKeys.Num()-1);
+    StringToIndexMap[StringKeys[Index]] = Index;
     StringKeys.Pop();
     DynamicValues.Swap(Index, DynamicValues.Num()-1);
     DynamicValues.Pop();

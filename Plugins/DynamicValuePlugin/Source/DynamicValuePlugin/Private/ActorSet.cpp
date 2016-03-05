@@ -26,6 +26,7 @@ bool UActorSet::Remove(AActor* Actor)
     if (Index)
     {
         Actors.Swap(*Index, Actors.Num()-1);
+        ActorMap[Actors[*Index]] = *Index;
         Actors.Pop();
         ActorMap.Remove(Actor);
         return true;
